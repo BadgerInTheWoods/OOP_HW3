@@ -25,6 +25,10 @@ public class Pharmacy implements Iterator<Component>, Comparable<Pharmacy> {
     // сравнение по количеству компонентов
     @Override
     public int compareTo(Pharmacy o) {
+        return 0;
+    }
+
+    public int compareToQuantity(Pharmacy o) {
         return Integer.compare(this.components.size(), o.components.size());
     }
 

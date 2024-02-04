@@ -41,9 +41,8 @@ public class Drugmain {
         //System.out.println(pharmacys);
 
         //---------------------------------------------------------------------
-        //первые два сорта это сортировка по количеству компонентов, последний сортирует по сумме сил компонентов
-        //Collections.sort(pharmacys,Comparator.naturalOrder());
-        //Collections.sort(pharmacys,Pharmacy::compareTo);
+        //первый сорт это сортировка по количеству компонентов, последний сортирует по сумме сил компонентов
+        //Collections.sort(pharmacys,Pharmacy::compareToQuantity);
 
         Collections.sort(pharmacys,Pharmacy::compareToPower);
         //---------------------------------------------------------------------
